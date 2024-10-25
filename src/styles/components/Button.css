@@ -1,0 +1,33 @@
+/* Estilo base do botão */
+.custom-button {
+    background-color: #7e7d7b; /* Cor de fundo laranja */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efeito de hover */
+  .custom-button:hover {
+    background-color: #a0a3b7; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .custom-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

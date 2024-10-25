@@ -1,0 +1,79 @@
+/* Estilo do NavBar */
+.navbar {
+    background-color: #0f1f0b; /* Verde escuro */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+  }
+
+  
+  /* Espaço para o logo */
+  .logo-space {
+    width: 50px; /* Largura do espaço da logo */
+    height: 50px; /* Altura do espaço da logo */
+    background-color: #fff; /* Cor de fundo da logo */
+    border-radius: 50%; /* Canto arredondado */
+    margin-right: 20px; /* Espaço entre a logo e o título */
+  }
+  
+  /* Título centralizado */
+  .navbar-title {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  /* Contêiner de botões à direita */
+  .navbar-buttons {
+    display: flex;
+    gap: 10px;
+
+  }
+  
+  /* Ícone do menu hamburguer */
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Botões no menu hamburguer */
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  .navbar-buttons.open {
+    display: flex;
+    flex-direction: column; /* Mudando para coluna */
+    gap: 10px;
+    position: absolute; /* Para posicionar em relação ao navbar */
+    right: 40px; /* Ajuste conforme necessário */
+    background-color: #004d00; /* Fundo igual ao navbar */
+    padding: 10px; /* Para espaçamento */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .navbar-buttons {
+      display: none; /* Esconder botões em telas menores */
+    }
+  
+    .menu-icon {
+      display: block; /* Mostrar ícone do menu */
+    }
+  
+    .navbar-buttons.open {
+      display: grid; /* Mostrar botões quando o menu estiver aberto */
+
+    }
+  }
+  

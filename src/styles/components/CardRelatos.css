@@ -1,0 +1,62 @@
+/* CardRelatos.css */
+
+.card-relatos {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 400px; /* Largura menor */
+  }
+  
+  .card-relatos-img {
+    flex: 0 0 100px; /* Tamanho fixo da imagem */
+    margin-right: 15px;
+  }
+  
+  .card-relatos-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-relatos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espalha o conteúdo */
+  }
+  
+  .card-relatos-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px; /* Mais espaço abaixo da descrição */
+  }
+  
+  .card-relatos-content h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 20px; /* Coloca o nome mais embaixo */
+    text-align: right; /* Alinha o nome à direita */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card-relatos {
+      flex-direction: column;
+      align-items: center;
+      width: 100%; /* Ocupa toda a largura em telas menores */
+    }
+  
+    .card-relatos-img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .card-relatos-content h4 {
+      text-align: center; /* Nome centralizado em telas pequenas */
+    }
+  }
+  
